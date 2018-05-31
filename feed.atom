@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="ja-JP" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:qiita.com,2005:/popular-items/feed</id>
+  <link rel="alternate" type="text/html" href="https://qiita.com/popular-items"/>
+  <link rel="self" type="application/atom+xml" href="https://qiita.com/popular-items/feed.atom"/>
+  <title>Qiita - 人気の投稿</title>
+  <updated>2018-04-19T14:00:00+09:00</updated>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/634746</id>
+    <published>2018-04-18T00:38:16+09:00</published>
+    <updated>2018-04-18T00:38:16+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/yyu/items/18df35988f3ea3b12af0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>“プログラミング言語Rust: 2nd Edition”の日本語版PDFを作成した</title>
+    <content type="html">
+&lt;span id="はじめに" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;はじめに
+
+&lt;strong&gt;&lt;a href="https://y-yu.github.io/trpl-2nd-pdf/book.pdf" class="autolink" rel="nofollow noopener" target="_blank"&gt;https://y-yu.github.io/trpl-2nd-pdf/book.pdf&lt;/a&gt;&lt;/strong&gt;
+
+&lt;img alt=":point_up:" class="emoji" height="20" src="https://cdn.qiita.com/emoji/twemoji/unicode/261d-fe0f.png" title=":point_up:" width="20"&gt; プログラミング言語Rust: 2nd Editionの日本語版PDFを公開しました！ &lt;img alt=":point_up:" class="emoji" height="20" src="https://cdn.qiita.com/emoji/twemoji/unicode/261d-fe0f.png" title=":point_up:" width="20"&gt;
+
+
+組版上のエ…</content>
+    <author>
+      <name>yyu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/634852</id>
+    <published>2018-04-18T09:36:10+09:00</published>
+    <updated>2018-04-19T16:09:14+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/issei_y/items/43037f620da1aa26f196?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>Twitterのフォローしている人が増えてきたのでソーシャルマップを作って関係性を理解しようとしたら結構理解できた話</title>
+    <content type="html">
+&lt;span id="動機" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E5%8B%95%E6%A9%9F"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;&lt;strong&gt;動機&lt;/strong&gt;
+
+Twitterは昔から利用していたのですが、ずっとフォローしている人の数は100人くらいでした。
+一説によると、人間が関係性を把握できる数は150人くらいまでと言います。（ちなみにその数を&lt;strong&gt;ダ…&lt;/strong&gt;</content>
+    <author>
+      <name>issei_y</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/634282</id>
+    <published>2018-04-17T01:18:51+09:00</published>
+    <updated>2018-04-17T09:04:06+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/simonritchie/items/d7dccb798f0b9c8b1ec5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>Jupyter 知っておくと少し便利なTIPS集</title>
+    <content type="html">今まで仕事で使ってきた、メジャーなものからマイナーなものまで含めたJupyter NotebooksのTIPS集です。
+
+&lt;span id="入力補完" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E5%85%A5%E5%8A%9B%E8%A3%9C%E5%AE%8C"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;入力補完
+
+とりあえずこれが無いと生きていけません。
+
+Nbextensions（…</content>
+    <author>
+      <name>simonritchie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/630029</id>
+    <published>2018-04-12T16:49:00+09:00</published>
+    <updated>2018-04-18T15:33:20+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/issei_y/items/ab641746be2704db98be?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>Twitterの名前を5分毎に東京の天気☼☂☃と連動させるサーバレスプログラムを書いたら色々知らないことが出てきた話</title>
+    <content type="html">
+&lt;span id="導入" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E5%B0%8E%E5%85%A5"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;&lt;strong&gt;導入&lt;/strong&gt;
+
+&lt;strong&gt;みなさんこんにちは！&lt;/strong&gt;
+私は将棋プログラムPonanzaの作者、山本一成といいます。Qiita初投稿です。よろしくおねがいします。
+
+いつものようにTwitterをしていた時、ふと思ったんです。…</content>
+    <author>
+      <name>issei_y</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/630212</id>
+    <published>2018-04-13T01:44:35+09:00</published>
+    <updated>2018-04-19T14:39:16+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/yoya/items/96c36b069e74398796f3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>グレースケール画像のうんちく</title>
+    <content type="html">カラー画像をグレースケール変換する際の前提知識から実際の変換アルゴリズムまで解説します。
+カラー画像を元に白黒印刷したいときや、最近だと機械学習の特徴抽出で輝度だけ使いたい等、意外とよくグレースケー…</content>
+    <author>
+      <name>yoya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/634912</id>
+    <published>2018-04-18T12:27:37+09:00</published>
+    <updated>2018-04-19T10:08:21+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/nanarya/items/661ec10ff262c84424a6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>フロントエンドエンジニア初学者の勉強リスト</title>
+    <content type="html">
+&lt;span id="はじめに" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;はじめに
+
+最近転職をしてフロントエンドエンジニアになりました。
+
+昔からWEBには触れていたものの、独学で細々とブログをやったりWEBページを持っていた程度なので、きちんと学ぶのは初めての初学者です。
+WEBの世界はとても広い。広すぎて何を目指して勉強すればいいのかわからない。何を調べたかも忘れそう。なので目印代わりに調べたことをここにまとめておこうと思います…</content>
+    <author>
+      <name>nanarya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/630896</id>
+    <published>2018-04-14T22:46:02+09:00</published>
+    <updated>2018-04-15T18:18:14+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/valley/items/82a0e46e090daf30f4e6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>東大を出てゼロからプログラミングを学び、1年後にWebサービスを作ってみた話</title>
+    <content type="html">
+&lt;span id="自己紹介" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;自己紹介
+
+こんにちは。
+tetsuo akaneyaといいます。
+
+僕は去年、東京大学を卒業しました。
+生物の勉強・研究をしていたのですが、自分の中で「違和感」が大きくなって、生物に対する熱意が冷め…</content>
+    <author>
+      <name>valley</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/633854</id>
+    <published>2018-04-16T08:12:28+09:00</published>
+    <updated>2018-04-17T14:50:27+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/ysdyt/items/9ccca82fc5b504e7913a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>データ分析で頻出のPandas基本操作</title>
+    <content type="html">
+&lt;span id="はじめに" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;はじめに
+
+機械学習や深層学習が人気の昨今ですが、それらのモデルの精度に最もクリティカルに影響するのはインプットする&lt;strong&gt;データの質&lt;/strong&gt;です。データの質は、データを適切に把握し、不要なデータを取り除いたり、必…</content>
+    <author>
+      <name>ysdyt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/635024</id>
+    <published>2018-04-18T16:20:55+09:00</published>
+    <updated>2018-04-18T16:20:55+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/KanNishida/items/2a381c966f5c2deb9b74?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>間違いの多い統計プロバガンダに騙されないための8つのアドバイス</title>
+    <content type="html">
+
+最近ではフェイクニュースという言葉のおかげで、ニュースなどメディアでみかける主張や数値に対して疑問を持つというスタンスが以前に比べて少しづつではありますが見られるようになってきたように思います。そ…</content>
+    <author>
+      <name>KanNishida</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/635045</id>
+    <published>2018-04-18T16:44:08+09:00</published>
+    <updated>2018-04-19T12:45:26+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/thrzn41/items/7fdbfd9e13fb3369380c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>破滅的プログラミングの末路#01 「整数の絶対値でやらかす」</title>
+    <content type="html">普通のプログラマなら直感的、反射神経的に理解しているような、
+初歩的で単純な小ネタを記事にしていこうかと思います。
+初歩的が故に、私のようなヘボなプログラマはよくやらかします。
+
+誤りや適切でない内容…</content>
+    <author>
+      <name>thrzn41</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/634047</id>
+    <published>2018-04-16T15:07:53+09:00</published>
+    <updated>2018-04-18T16:10:35+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/hidekoji/items/fa6e0634f338336110a4?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>安倍首相に関するTweetデータをテキストマイニングして可視化してみた (Part 1)</title>
+    <content type="html">
+&lt;span id="安倍首相に関するtweetデータをテキストマイニングして可視化してみた-part-1" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E5%AE%89%E5%80%8D%E9%A6%96%E7%9B%B8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8Btweet%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%83%9E%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E5%8F%AF%E8%A6%96%E5%8C%96%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F-part-1"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;安倍首相に関するTweetデータをテキストマイニングして可視化してみた (Part 1)
+
+
+
+最近、日本では国会が色々と荒れていますが、それを受けてTwitterでは安倍首相に関してどんなことが話題に…</content>
+    <author>
+      <name>hidekoji</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/635374</id>
+    <published>2018-04-19T13:01:00+09:00</published>
+    <updated>2018-04-19T14:18:24+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/ito-yusaku/items/f5ece0b4aac11a0c8b52?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>AWS、何から勉強したらいい？に対する俺の答え</title>
+    <content type="html">このツイートがわりと好評だったので解説。
+「AWS、何から勉強したらいい？」に対する俺が考えた回答がこれ。 &lt;a href="https://t.co/ouuP3P27Bu" rel="nofollow noopener" target="_blank"&gt;pic.twitter.com/ouuP3P27Bu&lt;/a&gt;— 伊藤 祐策(パソコンの大先生) (&lt;a href="/ito_yusaku" class="user-mention js-hovercard" title="ito_yusaku" data-hovercard-target-type="user" data-hovercard-target-name="ito_yusaku"&gt;…&lt;/a&gt;</content>
+    <author>
+      <name>ito-yusaku</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/632431</id>
+    <published>2018-04-15T22:01:43+09:00</published>
+    <updated>2018-04-15T22:10:43+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/dojineko/items/aae7e6d13479e08d49fd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>VuePress をお試ししてみた</title>
+    <content type="html">
+&lt;span id="vuepress-とは" class="fragment"&gt;&lt;/span&gt;&lt;a href="#vuepress-%E3%81%A8%E3%81%AF"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;VuePress とは
+
+
+
+&lt;a href="https://vuepress.vuejs.org/" rel="nofollow noopener" target="_blank"&gt;VuePress&lt;/a&gt;
+
+Vue の始祖こと &lt;a href="http://evanyou.me/" rel="nofollow noopener" target="_blank"&gt;Evan You&lt;/a&gt; 氏が新たに始めた Vue による静的サイトジェネレーターです。
+Markdown によるページの作成が可能で、Vue…</content>
+    <author>
+      <name>dojineko</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/630367</id>
+    <published>2018-04-13T14:14:08+09:00</published>
+    <updated>2018-04-16T10:33:05+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/khsk/items/0f200fc3a4a3542efa90?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>ESLintのルールを全部手動で設定するのは大変だからやめておけ</title>
+    <content type="html">よく来たな。
+お前がこの記事を見ているとゆうことは、やめておけとゆわれたことをあえてやろうとする真の男たらんとするものだろう。
+軟弱な男たちがスマッホの予測変換に骨抜きにされている間にお前は反骨もあ…</content>
+    <author>
+      <name>khsk</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/631913</id>
+    <published>2018-04-15T11:47:03+09:00</published>
+    <updated>2018-04-15T11:47:03+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/miyanokomiya/items/3d195d8b6e09097d0102?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>相性抜群なVueとSVGでオンラインマインドマップ</title>
+    <content type="html">
+&lt;span id="svgの熱" class="fragment"&gt;&lt;/span&gt;&lt;a href="#svg%E3%81%AE%E7%86%B1"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;SVGの熱
+
+最近Vueが熱いですよね！Reactに迫る勢いで激熱ですね！！そしてみなさんご存知のようにSVGも激熱々真っ盛りですね！！！
+
+&lt;span id="ご存じない" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E3%81%94%E5%AD%98%E3%81%98%E3%81%AA%E3%81%84"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;ご存じない？
+
+という雰囲気にいてもたってもいられないSVG…</content>
+    <author>
+      <name>miyanokomiya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/635250</id>
+    <published>2018-04-19T03:55:43+09:00</published>
+    <updated>2018-04-19T10:53:59+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/tomabou/items/a3d2b7436b3c7da8fc9f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>すごいC言語のマクロ __is_constexpr</title>
+    <content type="html">
+&lt;span id="はじめに" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;はじめに
+
+linuxカーネルで使われているC言語マクロの&lt;a href="https://qiita.com/satoru_takeuchi/items/3769a644f7113f2c8040" rel="nofollow noopener" target="_blank"&gt;紹介記事&lt;/a&gt;を見て、自分も&lt;a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/kernel.h?h=v4.17-rc1" rel="nofollow noopener" target="_blank"&gt;ソースコード&lt;/a&gt;を眺めていたら面白いマクロを見つけたので紹介します。
+
+&lt;span id="マクロの機能" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E3%83%9E%E3%82%AF%E3%83%AD%E3%81%AE%E6%A9%9F%E8%83%BD"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;マクロの機能
+
+&lt;code&gt;#define __is_conste…&lt;/code&gt;</content>
+    <author>
+      <name>tomabou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/632225</id>
+    <published>2018-04-15T17:57:58+09:00</published>
+    <updated>2018-04-19T14:11:16+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/kyogom/items/10987f2b76f06a868300?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>ExcelおじさんとGitHub若者が共存するためのタスク管理法</title>
+    <content type="html">
+&lt;span id="自己紹介" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;自己紹介
+
+SIer３年目のエンジニアです。1, 2年目は主に開発を担当してきたものの、今月から設計フェーズのプロジェクトに投げ込まれたところです。  
+
+&lt;span id="excel管理の問題点" class="fragment"&gt;&lt;/span&gt;&lt;a href="#excel%E7%AE%A1%E7%90%86%E3%81%AE%E5%95%8F%E9%A1%8C%E7%82%B9"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;Excel管理の問題点
+
+投入されたプロジェクトで…</content>
+    <author>
+      <name>kyogom</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/635289</id>
+    <published>2018-04-19T09:05:44+09:00</published>
+    <updated>2018-04-19T15:14:31+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/drken/items/f909b79ee03e679c7142?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>「アルゴリズム」とは何か、すべての人がわかるように解説！</title>
+    <content type="html">
+&lt;span id="0-はじめに" class="fragment"&gt;&lt;/span&gt;&lt;a href="#0-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;0. はじめに
+
+&lt;a href="http://www.msi.co.jp/" rel="nofollow noopener" target="_blank"&gt;NTTデータ数理システム&lt;/a&gt;で&lt;a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" rel="nofollow noopener" target="_blank"&gt;アルゴリズム&lt;/a&gt;の探求をしている大槻 (Ken/drken) です。好きなアルゴリズムは&lt;a href="https://qiita.com/drken/items/e805e3f514acceb87602" rel="nofollow noopener" target="_blank"&gt;二部マッチング&lt;/a&gt;です。
+
+&lt;a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" rel="nofollow noopener" target="_blank"&gt;アルゴリズム&lt;/a&gt;という言葉を聞いたことがある方は多い…</content>
+    <author>
+      <name>drken</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/635194</id>
+    <published>2018-04-19T00:14:26+09:00</published>
+    <updated>2018-04-19T15:05:24+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/reon777/items/6e242d38441a1f2b4bc0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>自動売買botの損益をpythonだけで可視化してみたらなぜかテンション下がった件</title>
+    <content type="html">みなさん、自動売買botの損益ってどうやって確認してますか？
+
+bitflyerだとアプリで損益グラフが見れますが、これは口座全体の損益になってしまうので、手動スキャをしてたり、複数botを運用してい…</content>
+    <author>
+      <name>reon777</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:qiita.com,2005:PublicArticle/635283</id>
+    <published>2018-04-19T08:20:15+09:00</published>
+    <updated>2018-04-19T08:20:15+09:00</updated>
+    <link rel="alternate" type="text/html" href="https://qiita.com/gold-kou/items/9713f6fd82baf1eccd6a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items"/>
+    <title>【Python入門】いまさらだけどパイソニスタとして必要な文法を網羅してみた</title>
+    <content type="html">
+&lt;span id="はじめに" class="fragment"&gt;&lt;/span&gt;&lt;a href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"&gt;&lt;i class="fa fa-link"&gt;&lt;/i&gt;&lt;/a&gt;はじめに
+
+Pythonの対象バージョンは3系です。（2系でも通じるものは多いはず）
+対象読者レベルは他言語を軽くでも触ったことある人です。「あー、Pythonだとこれはこう書くのねー」が網羅的に分…</content>
+    <author>
+      <name>gold-kou</name>
+    </author>
+  </entry>
+</feed>
