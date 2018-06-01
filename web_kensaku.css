@@ -2,7 +2,7 @@
 body{
   margin: 0 auto;
   max-width: 1000px;
-  min-width: 600px;
+  min-width: 860px;
 }
 
 .flex{
@@ -10,38 +10,44 @@ body{
 }
 
 .top{
-  border: solid #000000;
+  border: solid #55c500;
   height:60px;
+  background-color: #55c500;
 }
 
 .left{
   flex:1;
-  border: solid red;
+  border: solid #55c500;
   height: 80vh;
+  min-width: 180px;
 }
 
 .center{
   flex:3;
-  border: solid blue;
+  border: solid #55c500;
   height: 80vh;
   overflow:scroll;
+  min-width: 500px;
 }
 
 .right{
   flex:1;
-  border: solid pink;
+  border: solid #55c500;
   height: 80vh;
+  min-width: 180px;
 }
 .image{
   flex:1;
-  border: solid pink;
+  border: solid #55c500;
   padding: 0.5em;
+      margin: 0px 0px 0px 5px;
 }
 
 .kiji{
   flex:8;
-  border: solid pink;
+  border: solid #55c500;
   padding: 0.5em;
+    margin: 0px 3px 0px 0px;
 }
 
 img {
