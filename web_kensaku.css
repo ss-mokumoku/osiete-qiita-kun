@@ -47,7 +47,8 @@ body{
   flex:8;
   border: solid #55c500;
   padding: 0.5em;
-    margin: 0px 3px 0px 0px;
+  margin: 0px 3px 0px 0px;
+  word-break:break-all;
 }
 
 img {
