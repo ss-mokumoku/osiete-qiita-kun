@@ -3,10 +3,8 @@
  *  @brief WEBに表示するためのmainファイル
  *
  *  @author SystemSoft Arita-takahiro
- *  @date 2018/06/11 最終更新
+ *  @date 2018/05/31 最終更新
  */
-// Copyright (c) 2018 KDDI CORPORATION All Rights Reserved.
-
 require 'web_db.php'; //Databaseの基本クラス
 $db = new Database();
 
@@ -34,7 +32,7 @@ function def($db)
             ORDER BY record_crated_at DESC
             LIMIT 20;';
     $res = $db->select($sql);
-    $tag_name = add_tags($db, $res);
+    $tag_name = get_tags($db, $res);
 
     return [$res, $tag_name];
 }
@@ -70,7 +68,7 @@ function kensaku($db)
     $sth->bindParam(':name', $name, PDO::PARAM_STR);
     $sth->execute();
     $res = $sth->fetchAll(PDO::FETCH_ASSOC);
-    $tag_name = add_tags($db, $res);
+    $tag_name = get_tags($db, $res);
 
     return [$res, $tag_name];
 }
@@ -91,17 +89,15 @@ function kensaku($db)
  *
  *  @return        $tag_name　記事のタグ情報をデータベースから取得したものを連想配列にしている
  */
-function add_tags($db, $res)
+function get_tags($db, $res)
 {
-    $res = $db->select($sql);
-
     $sql2 = 'SELECT tag_name
              FROM tags_tbl, qiita_page_tags
              WHERE tags_tbl.tag_id = qiita_page_tags.tag_id
              AND qiita_page_tags.post_id = :post_id';
+    $sth = $db->pdo->prepare($sql2);
     for ($k = 0; $k < count($res); ++$k) {
         $params = [':post_id' => $res[$k]['post_id']];
-        $sth = $db->pdo->prepare($sql2, $params);
         $sth->bindParam(':post_id', $params[':post_id'], PDO::PARAM_STR);
         $sth->execute();
         $tag_name[] = $sth->fetchAll(PDO::FETCH_ASSOC);

@@ -4,10 +4,8 @@
  *  @brief データベースの基本クラス
  *
  *  @author SystemSoft Arita-takahiro
- *  @date 2018/06/11 最終更新
+ *  @date 2018/05/31 最終更新
  */
- // Copyright (c) 2018 KDDI CORPORATION All Rights Reserved.
-
 class Database
 {
     public $pdo;
