@@ -12,50 +12,46 @@ function def($db)
             LIMIT 20;';
     $res = $db->select($sql);
 
-    /*
-        $sql2 = 'SELECT tag_name
+    $sql2 = 'SELECT tag_name
              FROM tags_tbl, qiita_page_tags
              WHERE tags_tbl.tag_id = qiita_page_tags.tag_id
              AND qiita_page_tags.post_id = :post_id';
-        $tagid = [];
-        for ($k = 0; $k < count($res); ++$k) {
-            $params = [':post_id' => $res[$k]['post_id']];
-            $sth = $db->pdo->prepare($sql2, $params);
-            $sth->bindParam(':post_id', $params[':post_id'], PDO::PARAM_STR);
-            $sth->execute();
-            $tag_name[] = $sth->fetchAll(PDO::FETCH_ASSOC);
-        }
-    */
+    $tagid = [];
+    for ($k = 0; $k < count($res); ++$k) {
+        $params = [':post_id' => $res[$k]['post_id']];
+        $sth = $db->pdo->prepare($sql2, $params);
+        $sth->bindParam(':post_id', $params[':post_id'], PDO::PARAM_STR);
+        $sth->execute();
+        $tag_name[] = $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
 
     return [$res, $tag_name];
 }
 
 function kensaku($db)
 {
-    $name = htmlspecialchars($_POST['name'], ENT_QUOTES);
-
-    $sql3 = "SELECT *
+    $name = '%'.$_POST['name'].'%';
+    $sql3 = 'SELECT *
         FROM authors_tbl, articles_tbl ,qiita_page_tags ,tags_tbl
         WHERE authors_tbl.permanent_id = articles_tbl.permanent_id
         AND articles_tbl.post_id = qiita_page_tags.post_id
         AND tags_tbl.tag_id = qiita_page_tags.tag_id
-        AND (articles_tbl.title LIKE '%:name%'
-        OR articles_tbl.body LIKE '%:name%'
-        OR tags_tbl.tag_name LIKE '%:name%')
-			  GROUP BY qiita_page_tags.post_id";
-    $sql8 = str_replace(':name', $name, $sql3);
-    /*
+        AND (articles_tbl.title LIKE :name
+        OR articles_tbl.body LIKE :name
+        OR tags_tbl.tag_name LIKE :name)
+			  GROUP BY qiita_page_tags.post_id';
+//    $sql8 = str_replace(':name', $name, $sql3);
+
     $sth = $db->pdo->prepare($sql3);
-    $sth->bindParam(':name', '%'.$name.'%', PDO::PARAM_STR);
+    $sth->bindParam(':name', $name, PDO::PARAM_STR);
     $sth->execute();
     $res = $sth->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($res);
+
+    /*
+        $sth = $db->pdo->prepare($sql8);
+        $sth->execute();
+        $res = $sth->fetchAll(PDO::FETCH_ASSOC);
     */
-
-    $sth = $db->pdo->prepare($sql8);
-    $sth->execute();
-    $res = $sth->fetchAll(PDO::FETCH_ASSOC);
-
     $sql4 = 'SELECT tag_name
          FROM tags_tbl, qiita_page_tags
          WHERE tags_tbl.tag_id = qiita_page_tags.tag_id
@@ -72,7 +68,9 @@ function kensaku($db)
     return [$res, $tag_name];
 }
 
-//function add_tag($db)
+function add_tags($db)
+{
+}
 
 ?>
 <!DOCTYPE html>
