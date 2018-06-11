@@ -1,7 +1,30 @@
 <?php
+/**	@file
+ *  @brief WEBに表示するためのmainファイル
+ *
+ *  @author SystemSoft Arita-takahiro
+ *  @date 2018/06/11 最終更新
+ */
+// Copyright (c) 2018 KDDI CORPORATION All Rights Reserved.
 
-require 'web_db.php';
-    $db = new Database();
+require 'web_db.php'; //Databaseの基本クラス
+$db = new Database();
+
+/**
+ *  スタート画面を表示するための関数.
+ *
+ *  @date 2018/06/11 takahiro-arita
+ *
+ *  @param[in]     $db データベースクラス
+ *
+ *  @note
+ *  特にありません。
+ *
+ * @param mixed $db
+ *
+ *  @return        $res 記事情報をデータベースから取得したものを連想配列にしている
+ *                 $tag_name　記事のタグ情報をデータベースから取得したものを連想配列にしている
+ */
 function def($db)
 {
     $sql = 'SELECT *
@@ -16,6 +39,21 @@ function def($db)
     return [$res, $tag_name];
 }
 
+/**
+ *  フリーワードで検索した後のページを表示するための関数.
+ *
+ *  @date 2018/06/11 takahiro-arita
+ *
+ *  @param[in]     $db データベースクラス
+ *
+ *  @note
+ *  特にありません。
+ *
+ * @param mixed $db
+ *
+ *  @return        $res 記事情報をデータベースから取得したものを連想配列にしている
+ *                 $tag_name　記事のタグ情報をデータベースから取得したものを連想配列にしている
+ */
 function kensaku($db)
 {
     $name = '%'.$_POST['name'].'%';
@@ -37,6 +75,22 @@ function kensaku($db)
     return [$res, $tag_name];
 }
 
+/**
+ *  フリーワードで検索した後のページを表示するための関数.
+ *
+ *  @date 2018/06/11 takahiro-arita
+ *
+ *  @param[in]     $db データベースクラス
+ *                 $res データベースから取得した記事情報の連想配列
+ *
+ *  @note
+ *  特にありません。
+ *
+ * @param mixed $db
+ * @param mixed $res
+ *
+ *  @return        $tag_name　記事のタグ情報をデータベースから取得したものを連想配列にしている
+ */
 function add_tags($db, $res)
 {
     $res = $db->select($sql);

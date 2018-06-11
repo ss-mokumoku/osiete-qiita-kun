@@ -1,4 +1,10 @@
-
+/**	@file
+ *  @brief CSSのファイル
+ *
+ *  @author SystemSoft Arita-takahiro
+ *  @date 2018/06/11 最終更新
+ */
+ /* Copyright (c) 2018 KDDI CORPORATION All Rights Reserved. */
 body{
   margin: 0 auto;
   max-width: 1000px;
