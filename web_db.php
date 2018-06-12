@@ -17,9 +17,7 @@ class Database
     /**
      *  @brief コンストラクタ
      *
-     *  @date 2018/06/11 takahiro-arita
-     *
-     *  @param[in]
+     *  @date 2018/05/31 takahiro-arita
      *
      *  @note
      *  特にありません。
@@ -35,16 +33,15 @@ class Database
     /**
      *  @brief データベースからSELECTする
      *
-     *  @date 2018/06/11 takahiro-arita
-     *
-     *  @param[in]
+     *  @date 2018/05/31 takahiro-arita
      *
      *  @note
      *  特にありません。
      *
-     * @param mixed $sql
+     * @param string $sql
+     * @param array  $params
      *
-     *  @return
+     * @return fetchALLの結果の連想配列
      */
     public function select($sql, array $params = [])
     {
