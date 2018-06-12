@@ -39,7 +39,7 @@ $search_result_message = get_search_result_message();
                 </p>
                 <?php
                     echo $search_result_message;
-
+                    // 人気記事20件の情報をWEB上に表示する処理　そのため20回ループを行っている
                     for ($j = 0; $j < count($result[0]); ++$j) {
                         ?>
                         <div class="flex">
