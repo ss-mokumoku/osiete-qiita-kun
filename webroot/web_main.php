@@ -5,8 +5,8 @@
  *  @author SystemSoft Arita-takahiro
  *  @date 2018/05/31 最終更新
  */
-require 'web_SELECT.php';
-require 'web_db.php'; //Databaseの基本クラス
+require '/var/www/html/php_kiso/xml/web/src/database/web_SELECT.php';
+require '/var/www/html/php_kiso/xml/web/src/database/web_db.php'; //Databaseの基本クラス
 $db = new Database();
 $result = bunki($db);
 $search_result_message = get_search_result_message();
@@ -16,7 +16,7 @@ $search_result_message = get_search_result_message();
     <head>
         <meta charset="utf-8">
         <title>教えてQiita君</title>
-        <link href="web_kensaku.css" rel="stylesheet">
+        <link href="/php_kiso/xml/web/webroot/css/web_kensaku.css" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     </head>
     <body>
@@ -35,7 +35,7 @@ $search_result_message = get_search_result_message();
             <div class="center">
                 <p>
                     <b>人気の記事</b>
-                    <button><a href="csv.php">記事のCSV出力</a></button>
+                    <button><a href="/php_kiso/xml/web/src/csv.php">記事のCSV出力</a></button>
                 </p>
                 <?php
                     echo $search_result_message;
