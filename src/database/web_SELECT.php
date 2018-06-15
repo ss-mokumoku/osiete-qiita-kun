@@ -143,3 +143,14 @@ function get_search_result_message()
 
     return '';
 }
+
+function select_popular_person($db)
+{
+    $sql = 'SELECT name, profile_image_url, articles_tbl.permanent_id , count(*) as count
+             from articles_tbl inner join authors_tbl on articles_tbl.permanent_id = authors_tbl.permanent_id
+             group by permanent_id order by count desc, name asc limit 5';
+    $sth = $db->pdo->prepare($sql);
+    $sth->execute();
+
+    return $sth->fetchAll(PDO::FETCH_ASSOC);
+}

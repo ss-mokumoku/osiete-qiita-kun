@@ -40,10 +40,25 @@ body{
   border: solid #55c500;
   height: 80vh;
   min-width: 180px;
+    overflow:scroll;
 }
 .image{
   flex:1;
   border: solid #55c500;
+  padding: 0.5em;
+      margin: 0px 0px 0px 5px;
+}
+
+.popular_image{
+  flex:2;
+  border: solid #FFFFFF;
+  padding: 0.5em;
+      margin: 0px 0px 0px 5px;
+        word-break:break-all;
+}
+.ranking_number{
+  flex:1;
+  border: solid #FFFFFF;
   padding: 0.5em;
       margin: 0px 0px 0px 5px;
 }
@@ -55,6 +70,7 @@ body{
   margin: 0px 3px 0px 0px;
   word-break:break-all;
 }
+
 
 img {
   max-width: 100%;
@@ -78,7 +94,9 @@ div.box13 {
   float: left;
 }
 
-
-.clear {
-  clear:both;
+.popular_person {
+    flex:1;
+    border: solid #55c500;
+    padding: 0.5em;
+        margin: 0px 0px 0px 5px;
 }

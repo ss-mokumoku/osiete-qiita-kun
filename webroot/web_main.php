@@ -10,6 +10,20 @@ require '../src/database/web_db.php'; //Databaseの基本クラス
 $db = new Database();
 $result = bunki($db);
 $search_result_message = get_search_result_message();
+$popular_person = select_popular_person($db);
+
+for ($i = 0; $i < count($popular_person); ++$i) {
+    if (0 === $i) {
+        $ranking = 1;
+        $popular_person[0]['ranking'] = 1;
+    } elseif ($popular_person[$i]['count'] === $popular_person[$i - 1]['count']) {
+        $popular_person[$i]['ranking'] = $ranking;
+    } else {
+        $ranking = $ranking + 1;
+        $popular_person[$i]['ranking'] = $ranking;
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +32,10 @@ $search_result_message = get_search_result_message();
         <title>教えてQiita君</title>
         <link href="css/web_kensaku.css" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+        <canvas id="myChart"></canvas>
+    -->
     </head>
     <body>
         <div class="top" align="center">
@@ -81,7 +99,45 @@ $search_result_message = get_search_result_message();
                         <?php
                     } ?>
             </div>
-            <div class="right"></div>
+            <div class="right">
+                <p>
+                    <b>人気投稿者</b>
+                </p>
+
+                    <?php
+                        for ($j = 0; $j < count($popular_person); ++$j) {
+                            ?>
+            <div class="flex">
+                    <div class ="ranking_number">
+
+                        <img src="ranking_image/ranking<?php echo $popular_person[$j]['ranking']; ?>.png" >
+
+                    </div>
+                    <div class ="popular_image">
+                        <a href = "https://qiita.com/<?php echo $popular_person[$j]['name']; ?>" target="_blank">
+                            <img src="<?php echo $popular_person[$j]['profile_image_url']; ?>">
+                        </a>
+                        <p>
+                            <a href = "https://qiita.com/<?php echo $popular_person[$j]['name']; ?>" target="_blank">
+                                <?php echo $popular_person[$j]['name']; ?>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+<!--                <div class="container">
+                    <h2>Chart.js — Polar Chart Demo (apples)</h2>
+                        <div>
+                            <canvas id="myChart">
+                            <script type="text/javascript" src="pie_chart.js"></script>
+                            </script>
+                            </canvas>
+                        </div>
+                    </div>
+                -->
+                <?php
+                        }
+                ?>
+            </div>
         </div>
     </body>
 </html>
