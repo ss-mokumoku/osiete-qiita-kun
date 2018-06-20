@@ -148,7 +148,23 @@ function select_popular_person($db)
 {
     $sql = 'SELECT name, profile_image_url, articles_tbl.permanent_id , count(*) as count
              from articles_tbl inner join authors_tbl on articles_tbl.permanent_id = authors_tbl.permanent_id
+             WHERE record_created_at > (now() - INTERVAL 3650 DAY)
              group by permanent_id order by count desc, name asc limit 5';
+    $sth = $db->pdo->prepare($sql);
+    $sth->execute();
+
+    return $sth->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function select_popular_tags($db)
+{
+    $sql = 'SELECT tag_name, count(*) as count
+            FROM authors_tbl, articles_tbl ,qiita_page_tags ,tags_tbl
+            WHERE authors_tbl.permanent_id = articles_tbl.permanent_id
+            AND articles_tbl.post_id = qiita_page_tags.post_id
+            AND tags_tbl.tag_id = qiita_page_tags.tag_id
+            AND record_created_at > (now() - INTERVAL 3650 DAY)
+            group by tag_name order by count desc, tag_name asc limit 10';
     $sth = $db->pdo->prepare($sql);
     $sth->execute();
 
