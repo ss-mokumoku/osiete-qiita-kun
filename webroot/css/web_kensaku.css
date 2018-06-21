@@ -175,6 +175,16 @@ div.box_tag {
   /* 中のテキストのバランスは ↓ を好みで調整 */
   font-size: 1em;
   font-family: monospace;
-    color: #666;
-      margin: 0 auto;
+  color: #FFF;
+  margin: 0px 0px 6px 3px;
+  /* margin: 0 auto; */
+}
+
+.btn-success{
+          margin: 10px 0px 0px 5px;
+}
+.center_text {
+          margin: 0px 40px 10px 200px;
+            font-size: 2em;
+              color: #808000;
 }

@@ -65,7 +65,7 @@ for ($i = 0; $i < 10; ++$i) {
                     <input type="text" name="run_status" value =1 hidden />
                     <input type="submit" name="submit" value="検索する" />
                 </form>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sampleModal" onclick='popular_tags_graph_window(<?php echo json_encode($popular_tags_name); ?>,<?php echo json_encode($popular_tags_count); ?>)'>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sampleModal" onclick='popular_tags_graph_window(<?php echo json_encode($popular_tags_name); ?>,<?php echo json_encode($popular_tags_count); ?>)'>
 	            人気のタググラフ
                 </button>
                     <!-- モーダル・ダイアログ -->
@@ -77,6 +77,7 @@ for ($i = 0; $i < 10; ++$i) {
 				                <h4 class="modal-title">人気タグのグラフ</h4>
                             </div>
 	                        <div class="modal-body">
+                                <p>現在から1ヶ月の人気記事につけられた回数が多いタグの上位10件を表示</p>
                             　　<canvas id="myChart"></canvas>
                                     <!--<script>
                                         var tag_name = <?php echo  json_encode($popular_tags_name); ?>;
@@ -107,8 +108,8 @@ for ($i = 0; $i < 10; ++$i) {
 
             <div class="center">
                 <p>
-                    <b>人気の記事</b>
-                    <a href="/php_kiso/xml/web/src/csv.php"><button　type="button" class="btn btn-info btn-lg">記事のCSV出力</button></a>
+                    <b class="center_text">人気の記事</b>
+                    <a href="/php_kiso/xml/web/src/csv.php"><button　type="button" class="btn btn-success">記事のCSV出力</button></a>
                 </p>
                 <?php
                     echo $search_result_message;
@@ -166,11 +167,11 @@ for ($i = 0; $i < 10; ++$i) {
                     <div class ="ranking_number">
                         <?php if (1 === $popular_person[$j]['ranking']) {
                             ?>
-                            <i class="fas fa-trophy fa-gold"></i>
-                            <!-- <span class="fa-stack fa-lg">
+                            <!-- <i class="fas fa-trophy fa-gold"></i> -->
+                            <span class="fa-stack fa-lg">
                                 <span class="fa fa-trophy fa-stack-2x"></span>
                                 <span class="fa fa-stack-1x">1</span>
-                            </span> -->
+                            </span>
                         <?php
                         } elseif (2 === $popular_person[$j]['ranking']) {
                             ?>
