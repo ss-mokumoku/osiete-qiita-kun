@@ -60,13 +60,16 @@ for ($i = 0; $i < 10; ++$i) {
         </div>
         <div class="flex">
             <div class="left">
-                <form action="web_main.php" method="post">フリーワード検索<br />
+                <form action="web_main.php" method="post"><font color="#808000"><b>フリーワード検索</b></font><br />
                     <input type="text" name="name" />
                     <input type="text" name="run_status" value =1 hidden />
                     <input type="submit" name="submit" value="検索する" />
                 </form>
+                <br />
+                <br />
+                <p><font color="#808000"><b>人気のタググラフ</b></font></p>
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sampleModal" onclick='popular_tags_graph_window(<?php echo json_encode($popular_tags_name); ?>,<?php echo json_encode($popular_tags_count); ?>)'>
-	            人気のタググラフ
+	            表示
                 </button>
                     <!-- モーダル・ダイアログ -->
                 <div class="modal fade" id="sampleModal" tabindex="-1">
@@ -77,7 +80,8 @@ for ($i = 0; $i < 10; ++$i) {
 				                <h4 class="modal-title">人気タグのグラフ</h4>
                             </div>
 	                        <div class="modal-body">
-                                <p>現在から1ヶ月の人気記事につけられた回数が多いタグの上位10件を表示</p>
+                                <p>人気記事につけられた回数が多いタグの上位10件を表示。</p>
+                                <p>期間は現在から一年前までとする。</p>
                             　　<canvas id="myChart"></canvas>
                                     <!--<script>
                                         var tag_name = <?php echo  json_encode($popular_tags_name); ?>;
@@ -158,7 +162,7 @@ for ($i = 0; $i < 10; ++$i) {
             </div>
             <div class="right">
                 <p>
-                    <b>人気投稿者</b>
+                    <font color="#808000"><b>人気投稿者</b></font>
                 </p>
                 <?php for ($j = 0; $j < count($popular_person); ++$j) {
                         ?>
@@ -176,6 +180,10 @@ for ($i = 0; $i < 10; ++$i) {
                         } elseif (2 === $popular_person[$j]['ranking']) {
                             ?>
                             <i class="fas fa-trophy fa-silver"></i>
+                            <!-- <span class="fa-stack fa-lg">
+                                <span class="fa fa-trophy fa-stack-4x" ></span>
+                                <span class="fa fa-stack-1x">2</span>
+                            </span> -->
                         <?php
                         } elseif (3 === $popular_person[$j]['ranking']) {
                             ?>

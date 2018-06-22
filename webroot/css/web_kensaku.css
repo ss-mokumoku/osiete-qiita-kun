@@ -7,7 +7,7 @@
 body{
   margin: 0 auto;
   max-width: 1000px;
-  min-width: 860px;
+  min-width: 910px;
 
 }
 
@@ -33,7 +33,7 @@ body{
   border: solid #55c500;
   height: 80vh;
   overflow:scroll;
-  min-width: 500px;
+  min-width: 550px;
 }
 
 .right{
@@ -171,6 +171,7 @@ div.box_tag {
   font-size: 2em;  /* ← アイコン全体の大きさをここで変更できる */
     margin: 0 auto;
 }
+
 .fa-stack-1x {
   /* 中のテキストのバランスは ↓ を好みで調整 */
   font-size: 1em;
@@ -181,10 +182,10 @@ div.box_tag {
 }
 
 .btn-success{
-          margin: 10px 0px 0px 5px;
+          margin: 0px 0px 0px 5px;
 }
 .center_text {
           margin: 0px 40px 10px 200px;
-            font-size: 2em;
-              color: #808000;
+          font-size: 2em;
+          color: #808000;
 }
