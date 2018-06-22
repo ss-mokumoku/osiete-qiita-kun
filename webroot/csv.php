@@ -5,7 +5,7 @@
  *  @author SystemSoft Arita-takahiro
  *  @date 2018/05/31 最終更新
  */
-require 'database/web_db.php';
+require '../src/database/web_db.php';
 $db = new Database();
 // 出力情報の設定
 header('Content-Type: application/octet-stream');

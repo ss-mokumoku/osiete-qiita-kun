@@ -113,7 +113,7 @@ for ($i = 0; $i < 10; ++$i) {
             <div class="center">
                 <p>
                     <b class="center_text">人気の記事</b>
-                    <a href="/php_kiso/xml/web/src/csv.php"><button　type="button" class="btn btn-success">記事のCSV出力</button></a>
+                    <a href="./csv.php"><button　type="button" class="btn btn-success">記事のCSV出力</button></a>
                 </p>
                 <?php
                     echo $search_result_message;
